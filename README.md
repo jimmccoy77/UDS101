@@ -1,20 +1,20 @@
-### Combined Lesson Plan: **Deploying Nginx on Kubernetes using UDS CLI**
+### Asynchronous Prework: **UDS 101**
 
 **Objective:**  
-By the end of this 30-minute workshop, participants will have deployed an Nginx server locally using Kubernetes and UDS CLI, following a structured deployment process.
+By the end of this self-paced prework, participants will have deployed an Nginx server locally using Kubernetes and UDS CLI, gaining foundational experience that will prepare new engineers the more advanced **UDS 201 Live Workshop**.
 
 ---
 
-**Duration:** 30 minutes
+**Estimated Duration:** 30-45 minutes
 
 ---
 
-## Workshop Agenda
+## Prework Agenda
 
-### **1. Introduction (5 minutes)**
+### **1. Introduction**
 
-- **Objective:** Briefly introduce the participants to the tools they will be using: Kubernetes, UDS CLI, and Nginx.
-- **Topics:**
+- **Objective:** Familiarize yourself with the tools you'll be using: Kubernetes, UDS CLI, and Nginx.
+- **Discussion Topics:**
   - Overview of Kubernetes and its role in modern software deployment.
   - Introduction to UDS CLI as a powerful deployment tool designed specifically for secure and air-gapped environments.
   - Explanation of Nginx as a lightweight web server used in this exercise.
@@ -23,24 +23,24 @@ By the end of this 30-minute workshop, participants will have deployed an Nginx 
 It is critical that all Unicorn Engineers have a deep understanding of our core offerings. Even if creating UDS packages and UDS bundles isn’t part of your day-to-day work, gaining this experience will help you better serve our Mission Heroes and deepen your understanding of the UDS ecosystem.
 
 **Target Audience**:  
-This workshop is intended for new engineers in Product, Delivery, and Growth, as part of their onboarding process.
+This prework is intended for new engineers in Product, Delivery, and Growth, as part of their onboarding process and preparation for the UDS 201 Live Workshop.
 
-### **2. Setup Environment (5 minutes)**
+### **2. Setup Environment**
 
-- **Objective:** Ensure all participants have the necessary tools installed and set up.
+- **Objective:** Ensure you have the necessary tools installed and set up before proceeding.
 - **Steps:**
   - **Install UDS CLI**:
     - Command: `brew tap defenseunicorns/tap && brew install uds`
-  - **Ensure Docker is Running**: Verify Docker or Colima is running on participants' machines.
+  - **Ensure Docker is Running**: Verify Docker or Colima is running on your machine.
   - **Install K3d (if not already installed)**:
     - Command: `brew install k3d`
 
 **Note**:  
-Before diving into UDS Package and UDS Bundle creation, it’s important to understand what UDS is and the problem it solves. Complete the short, 10-minute "Intro to UDS" course, which all new hires are automatically enrolled in via Rippling. This foundational knowledge will make the hands-on portion of this workshop more meaningful.
+Before diving into UDS Package and UDS Bundle creation, it’s important to understand what UDS is and the problem it solves. Complete the short, 10-minute "Intro to UDS" course, which all new hires are automatically enrolled in via Rippling. This foundational knowledge will make the hands-on portion of this prework more meaningful.
 
-### **3. Create and Configure Nginx Zarf Package (10 minutes)**
+### **3. Create and Configure Nginx Zarf Package**
 
-- **Objective:** Participants will create a Zarf package for Nginx and configure it for deployment.
+- **Objective:** Create a Zarf package for Nginx and configure it for deployment.
 - **Steps:**
   - **Create Directory for Nginx Package**:
     - Command: `mkdir nginx-package && cd nginx-package`
@@ -80,7 +80,7 @@ Before diving into UDS Package and UDS Bundle creation, it’s important to unde
 **Additional Context**:  
 Before diving into this exercise, it's beneficial to understand what makes a Zarf Package a UDS Package. Familiarize yourself with the UDS Core applications and how they integrate with Zarf by reviewing the available documentation [here](https://uds.defenseunicorns.com/docs/).
 
-### **4. Create UDS Bundle for Nginx Deployment (5 minutes)**
+### **4. Create UDS Bundle for Nginx Deployment**
 
 - **Objective:** Configure a UDS Bundle to deploy the Nginx package.
 - **Steps:**
@@ -116,7 +116,7 @@ Before diving into this exercise, it's beneficial to understand what makes a Zar
 **Further Learning**:  
 This guide is intended to fast-track creating a UDS Package and UDS Bundle. It’s recommended to explore the UDS repositories on GitHub to better understand the broader UDS ecosystem.
 
-### **5. Deploy the UDS Bundle (5 minutes)**
+### **5. Deploy the UDS Bundle**
 
 - **Objective:** Deploy the Nginx server on a local Kubernetes cluster using UDS CLI.
 - **Steps:**
@@ -128,7 +128,7 @@ This guide is intended to fast-track creating a UDS Package and UDS Bundle. It�
 **Tip**:  
 Deploying UDS Core is the gateway to leveraging UDS and easily creating bundles. For more details on deploying UDS Core, review the [UDS Core deployment guide](https://medium.com/defense-unicorns/from-zero-to-hero-kickstart-your-journey-with-uds-core-8409972c8bb9).
 
-### **6. Interact with the Deployed Nginx Server (3 minutes)**
+### **6. Interact with the Deployed Nginx Server**
 
 - **Objective:** Verify the deployment and interact with the Nginx server.
 - **Steps:**
@@ -144,13 +144,13 @@ Deploying UDS Core is the gateway to leveraging UDS and easily creating bundles.
 **Pro Tip**:  
 As you become more familiar with UDS and Kubernetes, using tools like k9s will help you manage and monitor your clusters more effectively.
 
-### **7. Q&A and Wrap-Up (2 minutes)**
+### **7. Review and Prepare for UDS 201 Live Workshop**
 
-- **Objective:** Address any questions and summarize key points.
-- **Discussion Points:**
-  - Importance of understanding the deployment process.
-  - How UDS simplifies Kubernetes deployments, especially in secure environments.
-  - Potential next steps: exploring additional features or more complex deployments.
+- **Objective:** Reflect on your experience and prepare for the upcoming live session.
+- **Tasks:**
+  - Take note of any challenges or questions that arose during the prework.
+  - Review the UDS documentation and your deployment setup to solidify your understanding.
+  - Prepare to discuss your experience and findings during the UDS 201 Live Workshop.
 
 **Cohort Support**:  
 As a new 🦄 Engineer, you are part of a cohort that can provide additional support and resources. Use your new hire Slack channel to share findings and ask questions.
@@ -165,4 +165,4 @@ As a new 🦄 Engineer, you are part of a cohort that can provide additional sup
 - [Intro to UDS Course](https://app.rippling.com/apps/RipplingLMS/employee/my-courses)
 
 **Final Note**:  
-This lesson plan is designed to be interactive and hands-on, with participants actively following along and deploying Nginx in real-time. Completing this exercise will not only prepare you for more advanced tasks but also provide a solid foundation for understanding and working within the UDS ecosystem.
+This prework is designed to be self-paced and hands-on, with the goal of preparing you for more advanced tasks in the upcoming UDS 201 Live Workshop. Completing this exercise will provide a solid foundation for understanding and working within the UDS ecosystem.
